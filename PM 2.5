@@ -1,0 +1,92 @@
+from google.colab import files
+
+uploaded = files.upload()
+
+import pandas as pd
+
+df = pd.read_csv("annual-pm25-emissions-from-wildfires (1).csv")
+
+print(df.head())
+
+annual-pm25-emissions-from-wildfires (1).csv
+annual-pm25-emissions-from-wildfires (1).csv(text/csv) - 151988 bytes, last modified: 5/10/2024 - 100% done
+Saving annual-pm25-emissions-from-wildfires (1).csv to annual-pm25-emissions-from-wildfires (1).csv
+        Entity Code  Year  Annual PM2.5 emissions from wildfires
+0  Afghanistan  AFG  2003                             2038.63000
+1  Afghanistan  AFG  2004                             1456.13000
+2  Afghanistan  AFG  2005                              941.55005
+3  Afghanistan  AFG  2006                             1482.52000
+4  Afghanistan  AFG  2007                             1731.14000
+
+# Filter the data for Mexico
+mexico_data = df[df['Entity'] == 'Mexico']
+
+# Display the first few rows of the filtered DataFrame
+print(mexico_data)
+
+ Entity Code  Year  Annual PM2.5 emissions from wildfires
+3212  Mexico  MEX  2003                              457487.12
+3213  Mexico  MEX  2004                              233020.61
+3214  Mexico  MEX  2005                              462092.80
+3215  Mexico  MEX  2006                              343352.60
+3216  Mexico  MEX  2007                              312385.38
+3217  Mexico  MEX  2008                              340221.28
+3218  Mexico  MEX  2009                              392849.53
+3219  Mexico  MEX  2010                              267253.70
+3220  Mexico  MEX  2011                              612259.60
+3221  Mexico  MEX  2012                              322527.30
+3222  Mexico  MEX  2013                              453191.97
+3223  Mexico  MEX  2014                              202037.69
+3224  Mexico  MEX  2015                              286538.90
+3225  Mexico  MEX  2016                              349829.22
+3226  Mexico  MEX  2017                              475084.78
+3227  Mexico  MEX  2018                              373326.94
+3228  Mexico  MEX  2019                              515297.60
+3229  Mexico  MEX  2020                              391699.88
+3230  Mexico  MEX  2021                              406380.47
+3231  Mexico  MEX  2022                              373075.12
+3232  Mexico  MEX  2023                              407393.94
+3233  Mexico  MEX  2024                              446085.66
+
+# Import the necessary libraries
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Create a DataFrame with the data
+data = {
+    'Entity': ['Mexico'] * 22,  # Assuming this data is for Mexico
+    'Year': [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012,
+             2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024],
+    'Annual PM2.5 emissions from wildfires': [
+        457487.12, 233020.61, 462092.80, 343352.60, 312385.38,
+        340221.28, 392849.53, 267253.70, 612259.60, 322527.30,
+        453191.97, 202037.69, 286538.90, 349829.22, 475084.78,
+        373326.94, 515297.60, 391699.88, 406380.47, 373075.12,
+        407393.94, 446085.66
+    ]
+}
+
+df = pd.DataFrame(data)
+
+# Filter the data for Mexico
+mexico_data = df[df['Entity'] == 'Mexico']
+
+plt.style.use('seaborn-darkgrid')
+
+plt.figure(figsize=(10, 5))
+plt.plot(mexico_data['Year'], mexico_data['Annual PM2.5 emissions from wildfires'],
+         marker='o', color='#1f77b4', markersize=6, linewidth=2)
+
+plt.title('Annual PM2.5 Emissions from Wildfires in Mexico (2003-2024)', fontsize=16, fontweight='bold')
+plt.xlabel('Year', fontsize=12)
+plt.ylabel('PM2.5 Emissions (kg)', fontsize=12)
+plt.xticks(mexico_data['Year'], rotation=45)
+plt.yticks(fontsize=10)
+plt.grid(True, linestyle='--', alpha=0.6)
+plt.tight_layout()
+
+plt.show()
+
+
+
+
