@@ -1,5 +1,5 @@
+**Welcome to Growa!**
 
-Welcome to Growa!
 At Growa, we are committed to tackling the intertwined challenges of gender inequality and climate change through innovative solutions and data-driven insights. Our initiative recognizes that the United Nations Sustainable Development Goals (SDGs) provide a vital framework for fostering peace and prosperity for both people and the planet.
 
 As climate change intensifies, marginalized communities—especially gender minorities—face heightened vulnerabilities, leading to a “crisis layered on top of a crisis.” We believe that addressing these interconnected issues is not only crucial for achieving sustainable development but also for building stronger, more equitable communities.
@@ -27,4 +27,6 @@ Be aware of algorithmic biases in data analysis and strive to represent the stor
 
 Engage with the knowledge and expertise of the communities you study, recognizing their traditional practices and perspectives.
 
-Join us on this journey to create meaningful change at the intersection of gender equity and climate action. 
+Find out more about our project;
+
+https://drive.google.com/drive/folders/1p60NC3k-vZxfs0X9uoqwx5mjTVGVEJNE?usp=drive_link
