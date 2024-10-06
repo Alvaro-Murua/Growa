@@ -29,4 +29,3 @@ Engage with the knowledge and expertise of the communities you study, recognizin
 
 Find out more about our project;
 
-https://drive.google.com/drive/folders/1p60NC3k-vZxfs0X9uoqwx5mjTVGVEJNE?usp=drive_link
